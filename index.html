@@ -4,6 +4,16 @@ title: Home Page
 <h1>
 <a id="my-lovely-project" class="anchor" href="#my-lovely-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My Lovely Project</h1>
 
+{% if site.github.releases[0] %}
+   {% assign release = site.github.releases[0] %}
+   <p>
+     Latest release:
+     <strong><a href="{{release.html_url}}" >{{release.tag_name}}</a></strong> 
+     ({{release.published_at | date: '%B %e, %Y'}})
+
+   </p>
+{% endif %}
+
 <p>A great example repo you can fork to your heart’s content, that serves as a launchpad for working your way through the amazing <strong><a href="http://shop.oreilly.com/category/videos/programming.do">Learning GitHub</a></strong> video training  series.</p>
 
 <h2>
