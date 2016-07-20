@@ -5,6 +5,8 @@ defaults:
    values:
      layout: "main"
 gems:
-  -  jekyll-sitemap     
+  -  jekyll-feed
+  -  jekyll-sitemap  
+  -  jekyll-redirect-from   
 title: "Ruben Demo"
 author: "Ruben Martin"
