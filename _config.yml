@@ -4,5 +4,7 @@ defaults:
      path: ""
    values:
      layout: "main"
+gems:
+  -  jekyll-sitemap     
 title: "Ruben Demo"
 author: "Ruben Martin"
